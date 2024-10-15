@@ -1,14 +1,14 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: 82107247
+  name: "82107247"
 spec:
   replicas: 1
   template:
     spec:
       containers:
-        - name: 82107247
-          command: ["java","-jar","/app.jar"]
+        - name: "82107247"
+          #command: ["java","-jar","/app.jar"]
           args: ["--spring.config.location=file:/config/application.yml"]
           volumeMounts:
           - mountPath: /mnt/cloud-sample
